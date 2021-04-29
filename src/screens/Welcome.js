@@ -3,11 +3,7 @@ import "./css/welcome.css";
 import { Link } from "react-router-dom";
 
 class Welcome extends Component {
-  // // 1. Inizializza variabili
-  // constructor(props) {
-  //   super(props);
 
-  // }
 
   render() {
     return (
