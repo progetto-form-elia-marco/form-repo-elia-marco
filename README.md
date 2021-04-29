@@ -23,7 +23,7 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Aggiungere oggetto a ls con utente attivo (mail)
 - [x] Aggiungi UIInputbox a forgotPsw (mail)
-- [ ] Modificare Welcome marco@marco (ridare Welcome Marco)
+- [x] Modificare Welcome marco@marco (ridare Welcome Marco)
 - [ ] Fixare colore radio button in register
 
 - [x] Da login, inserisci mail, controlla nel ls, se non esiste aggiungi un tostify che avvisa che l'account non esiste, sennò controlla password; se sbagliata => tostify, oppure vai a welcome.
