@@ -1,0 +1,140 @@
+h2 {
+  color: #4b2354;
+  line-height: 1.2;
+  font-size: 30px;
+}
+
+.regContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../assets/images/sfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 15px;
+}
+
+.formContainerReg {
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 15px 30px 15px;
+}
+
+.fullName,
+.pswContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pswContainer {
+  gap: 0;
+}
+
+.genderRadio {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #bd59d4;
+}
+
+.containerInputboxReg {
+  padding: 20px;
+  font-weight: 700;
+  color: #4b2354;
+  height: 100%;
+}
+
+.selectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.selectTitle span {
+  font-weight: 700;
+  color: #4b2354;
+}
+
+.selectTitle select {
+  background-color: #bd59d4;
+  border: none;
+  appearance: none;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  padding-right: 40px;
+}
+
+.selectTitle option {
+  background: white;
+  color: black;
+}
+
+.selectTitle::after {
+  position: absolute;
+  top: 37%;
+  right: 22%;
+  content: "";
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  background: rgb(255, 255, 255);
+  width: 1em;
+  height: 0.7em;
+}
+
+.genderRadio .containerInputboxReg input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  opacity: 0;
+  cursor: pointer;
+  color: #4b2354;
+  margin: 0;
+}
+
+.genderRadio .containerInputboxReg {
+  position: relative;
+  min-width: 90px;
+  text-align: center;
+}
+
+.containerInputboxReg {
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: initial;
+  /* margin-bottom: 15px; */
+  display: flex;
+}
+
+.containerInputboxReg input {
+  height: initial;
+}
+
+@media (min-width: 600px) {
+  .fullName,
+  .pswContainer {
+    flex-direction: row;
+  }
+
+  .pswContainer {
+    gap: 30px;
+  }
+}

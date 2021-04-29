@@ -1,0 +1,46 @@
+.welcomeContainer {
+  width: auto;
+  min-height: 100vh;
+  background-image: url("../../assets/images/sfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.welcomeCard {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 768px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeTitle {
+  text-align: center;
+}
+
+.welcomeLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.welcomeLink:hover {
+  color: #90519e;
+
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.322);
+  text-decoration: underline;
+  cursor: pointer;
+}

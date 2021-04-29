@@ -1,0 +1,82 @@
+/* MOBILE */
+@media all and (max-width: 480px) {
+  .containerInputbox {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    -moz-box-shadow: 0 0 1px #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc;
+    box-shadow: 0 0 1px #ccc;
+    background-color: white;
+    margin-top: 5px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.315);
+  }
+
+  .containerInputbox input {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b2354;
+    line-height: 1.2;
+    display: flex;
+    height: 62px;
+    padding: 0 20px 0 23px;
+  }
+
+  ::placeholder {
+    color: #4b2354;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+}
+
+/* DESKTOP */
+@media all and (max-width: 1689px) {
+  .containerInputbox {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    -moz-box-shadow: 0 0 1px #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc;
+    box-shadow: 0 0 1px #ccc;
+    background-color: white;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .containerInputbox input {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b2354;
+    line-height: 1.2;
+    display: flex;
+    height: 62px;
+    padding: 0 20px 0 23px;
+  }
+
+  ::placeholder {
+    color: #4b2354;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+}
