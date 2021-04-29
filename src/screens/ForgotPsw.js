@@ -32,6 +32,9 @@ export default class ForgotPsw extends Component {
   };
 
   callbackCheck = () => {
+
+    const lsc = JSON.parse(localStorage.getItem("data"));
+
     if (
       this.state.psw === this.state.reapPsw &&
       (this.state.psw !== "" || this.state.reapPsw !== "") &&
