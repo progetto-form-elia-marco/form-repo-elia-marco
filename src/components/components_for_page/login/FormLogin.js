@@ -148,7 +148,7 @@ class FormLogin extends Component {
           <UiInputbox
             type="text"
             placeholder={"username or email"}
-            maxLength={20}
+            maxLength={40}
             callback={this.callbackUsername}
             marginTop={"30px"}
             boxShadow={"0px 0px 30px rgba(0, 0, 0, 0.130)"}
