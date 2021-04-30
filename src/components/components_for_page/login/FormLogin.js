@@ -9,6 +9,7 @@ import { Flip } from "react-toastify";
 import UiButton from "../../ui/funcComponents/UiButton";
 import UiInputbox from "../../ui/funcComponents/UiInputbox";
 import UiCheckbox from "../../ui/funcComponents/UiCheckbox";
+import UTILS from "../../../utils/mailUtil";
 
 import CookieConsent from "react-cookie-consent";
 
@@ -47,7 +48,9 @@ class FormLogin extends Component {
     let password = this.state.psw;
     let checkControl = this.state.check;
     // Regular expression per validare la mail
-    const control = /^[^A-Z0-9._%+-]+@[^A-Z0-9.-]+\.[^A-Z]{2,3}$/;
+   // const control = /^[^A-Z0-9._%+-]+@[^A-Z0-9.-]+\.[^A-Z]{2,3}$/;
+
+    const control=UTILS.emailValidation(email)
 
     const lsc = JSON.parse(localStorage.getItem("data"));
     const isInls = lsc.find((utente) => utente.email === email);
@@ -57,14 +60,14 @@ class FormLogin extends Component {
     //Valuto se c'è almeno un errore nei dati inseriti
     if (
       email === "" ||
-      !control.test(email) ||
+      !control ||
       password === "" ||
       !checkControl ||
       !isInls ||
       !validPsw
     ) {
       //Controllo i vari casi di errore e mostro Toast appropriato
-      (email === "") | !control.test(email) &&
+      (email === "") | !control &&
         this.showToast("Errore nell'inserimento della mail");
       password === "" &&
         this.showToast("Errore nell'inserimento della password");

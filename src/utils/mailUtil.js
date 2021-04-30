@@ -8,6 +8,4 @@ const UTILS= {
 
 }
 
-export {
-    UTILS,
-};
+export default UTILS
