@@ -34,7 +34,7 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 -[x] Utils mail
 -[x] Fixare tostify inutili in Formlogin.js
--[ ] Fixare Select (freccina e default) in FormRegister.js
+-[x] Fixare Select (freccina e default) in FormRegister.js
 
 
 ## File Controllati

@@ -88,9 +88,9 @@ h2 {
 }
 
 .selectTitle::after {
-  position: absolute;
-  top: 37%;
-  right: 22%;
+  position: relative; 
+  /* top: 14px; */
+  right: 35px;
   content: "";
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
   background: rgb(255, 255, 255);
