@@ -209,7 +209,6 @@ class FormLogin extends Component {
               callback={this.callbackGoogle}
               width="50px"
               height="50px"
-              borderRadius="50px"
               display="flex"
               alignItems="center"
               justifyContent="center"
