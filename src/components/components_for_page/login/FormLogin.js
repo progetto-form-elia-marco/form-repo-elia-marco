@@ -68,18 +68,18 @@ class FormLogin extends Component {
     ) {
       //Controllo i vari casi di errore e mostro Toast appropriato
       if ((email === "") | !control) {
-        this.showToast("Errore nell'inserimento della mail");
+        this.showToast("Mail not valid");
       } else if (!isInls) {
         this.showToast("User not found!");
       }
 
       if (password === "") {
-        this.showToast("Inserire la password");
+        this.showToast("Insert password");
       } else if (!validPsw) {
         this.showToast("Password not valid!");
       }
 
-      !checkControl && this.showToast("Devi accettare i termini di servizio");
+      !checkControl && this.showToast("Accept the terms of service");
     } else {
       //Altrimenti se non ci sono errori, salvo e cambio screen
       email = this.state.user;
@@ -166,7 +166,7 @@ class FormLogin extends Component {
           <UiCheckbox
             type="checkbox"
             name={"termini"}
-            label={"Accetto i termini di servizio"}
+            label={"I accepted the terms of service"}
             placeholder={"password"}
             maxLength={15}
             callback={this.callbackCheck}
