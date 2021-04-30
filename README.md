@@ -54,5 +54,5 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 - [x] login.css
 - [x] forgotpsw.css
 - [x] uiButton.css
-- [ ] uiInputbox.css
+- [x] uiInputbox.css
 - [ ] uiCheckbox.css
