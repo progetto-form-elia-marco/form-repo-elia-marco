@@ -32,11 +32,27 @@ export default class ForgotPsw extends Component {
   };
 
   callbackCheck = () => {
+
+    const lsc = JSON.parse(localStorage.getItem("data"));
+    const index = lsc.findIndex((utente) => utente.email === this.state.email);
+
     if (
       this.state.psw === this.state.reapPsw &&
       (this.state.psw !== "" || this.state.reapPsw !== "") &&
       this.state.email !== ""
-    ) {
+      && index!==-1
+      ) {
+  
+        const nls= lsc.map(utente=>{
+          if(utente.email===this.state.email){
+              return{email:this.state.email,
+                     psw: this.state.psw
+              };
+           }  
+            return utente;
+        })
+  
+        localStorage.setItem('data',JSON.stringify(nls))
       this.props.history.push("/");
     } else {
       this.state.email === "" &&
