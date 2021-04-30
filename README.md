@@ -30,7 +30,10 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 - [x] Da register: inserisci tutti i dati, se la mail esiste => tostify ("Account già registrato"), sennò aggiorna il ls aggiungendo email e psw nuove.
 - [x] Da Welcome: clear quando si fa il log out dell'utente attivo
 
-- [ ] Da forgotPsw: controllo se esiste mail in ls, e modificare la psw associata a quella mail. Se email non esiste, aggiungere un tostify
+- [x] Da forgotPsw: controllo se esiste mail in ls, e modificare la psw associata a quella mail. Se email non esiste, aggiungere un tostify
+
+-[ ] Utils mail
+-[ ] Fixare tostify inutili in Formlogin.js
 
 ## File Controllati
 
@@ -38,7 +41,20 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Welcome.js (ricordare di togliere il costruttore se non servirà)
 - [x] FormRegister.js
+- [ ] FormLogin.js
+- [ ] ForgotPsw.js
+- [ ] UiButton.js
+- [ ] UiInputbox.js
+- [ ] UiCheckbox.js
+- [ ] UiSelect.js
+
 
 ### CSS files
 
 - [x] register.css
+- [ ] welcome.css
+- [ ] login.css
+- [ ] forgotpsw.css
+- [ ] uiButton.css
+- [ ] uiInputbox.css
+- [ ] uiCheckbox.css
