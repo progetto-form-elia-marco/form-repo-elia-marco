@@ -48,9 +48,9 @@ class FormLogin extends Component {
     let password = this.state.psw;
     let checkControl = this.state.check;
     // Regular expression per validare la mail
-   // const control = /^[^A-Z0-9._%+-]+@[^A-Z0-9.-]+\.[^A-Z]{2,3}$/;
+    // const control = /^[^A-Z0-9._%+-]+@[^A-Z0-9.-]+\.[^A-Z]{2,3}$/;
 
-    const control=UTILS.emailValidation(email)
+    const control = UTILS.emailValidation(email);
 
     const lsc = JSON.parse(localStorage.getItem("data"));
     const isInls = lsc.find((utente) => utente.email === email);
@@ -67,13 +67,19 @@ class FormLogin extends Component {
       !validPsw
     ) {
       //Controllo i vari casi di errore e mostro Toast appropriato
-      (email === "") | !control &&
+      if ((email === "") | !control) {
         this.showToast("Errore nell'inserimento della mail");
-      password === "" &&
-        this.showToast("Errore nell'inserimento della password");
+      } else if (!isInls) {
+        this.showToast("User not found!");
+      }
+
+      if (password === "") {
+        this.showToast("Inserire la password");
+      } else if (!validPsw) {
+        this.showToast("Password not valid!");
+      }
+
       !checkControl && this.showToast("Devi accettare i termini di servizio");
-      !isInls && this.showToast("User not found!");
-      !validPsw && this.showToast("Password not valid!");
     } else {
       //Altrimenti se non ci sono errori, salvo e cambio screen
       email = this.state.user;
