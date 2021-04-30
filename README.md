@@ -43,20 +43,19 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Welcome.js (ricordare di togliere il costruttore se non servirà)
 - [x] FormRegister.js
-- [ ] FormLogin.js
-- [ ] ForgotPsw.js
-- [ ] UiButton.js
-- [ ] UiInputbox.js
-- [ ] UiCheckbox.js
-- [ ] UiSelect.js
-
+- [x] FormLogin.js
+- [x] ForgotPsw.js
+- [x] UiButton.js
+- [x] UiInputbox.js
+- [x] UiCheckbox.js
+- [x] UiSelect.js
 
 ### CSS files
 
 - [x] register.css
-- [ ] welcome.css
-- [ ] login.css
-- [ ] forgotpsw.css
-- [ ] uiButton.css
-- [ ] uiInputbox.css
-- [ ] uiCheckbox.css
+- [x] welcome.css
+- [x] login.css
+- [x] forgotpsw.css
+- [x] uiButton.css
+- [x] uiInputbox.css
+- [x] uiCheckbox.css

@@ -189,7 +189,6 @@ class FormLogin extends Component {
 
           <div className="socialButtons">
             <UiButton
-              //backgroundColor="white"
               className="facebook"
               img={"facebook"}
               color="white"

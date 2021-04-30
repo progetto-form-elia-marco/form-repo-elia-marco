@@ -16,10 +16,6 @@ if (!ls) {
 }
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Router>
@@ -28,7 +24,6 @@ class App extends Component {
           <Route path="/welcome" component={Welcome} />
           <Route path="/register" component={Register} />
           <Route path="/forgotPsw" component={ForgotPsw} />
-          {/* <Route path="*" component={ForgotPsw} /> */}
         </Switch>
       </Router>
     );

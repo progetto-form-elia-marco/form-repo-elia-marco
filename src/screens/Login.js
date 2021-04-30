@@ -1,10 +1,8 @@
 //import class components
-import React, { Component, context } from "react";
+import React, { Component } from "react";
 import FormLogin from "../components/components_for_page/login/FormLogin";
 //Import css
 import "./css/login.css";
-
-
 
 class Login extends Component {
   constructor(props) {
