@@ -32,8 +32,7 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Da forgotPsw: controllo se esiste mail in ls, e modificare la psw associata a quella mail. Se email non esiste, aggiungere un tostify
 
--[ ] Utils mail
--[ ] Fixare tostify inutili in Formlogin.js
+-[ ] Utils mail -[ ] Fixare tostify inutili in Formlogin.js
 
 ## File Controllati
 
@@ -48,13 +47,12 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 - [ ] UiCheckbox.js
 - [ ] UiSelect.js
 
-
 ### CSS files
 
 - [x] register.css
 - [x] welcome.css
 - [x] login.css
 - [x] forgotpsw.css
-- [ ] uiButton.css
+- [x] uiButton.css
 - [ ] uiInputbox.css
 - [ ] uiCheckbox.css
