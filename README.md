@@ -24,7 +24,7 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 - [x] Aggiungere oggetto a ls con utente attivo (mail)
 - [x] Aggiungi UIInputbox a forgotPsw (mail)
 - [x] Modificare Welcome marco@marco (ridare Welcome Marco)
-- [ ] Fixare colore radio button in register
+- [x] Fixare colore radio button in register
 
 - [x] Da login, inserisci mail, controlla nel ls, se non esiste aggiungi un tostify che avvisa che l'account non esiste, sennò controlla password; se sbagliata => tostify, oppure vai a welcome.
 - [x] Da register: inserisci tutti i dati, se la mail esiste => tostify ("Account già registrato"), sennò aggiorna il ls aggiungendo email e psw nuove.
@@ -32,9 +32,9 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Da forgotPsw: controllo se esiste mail in ls, e modificare la psw associata a quella mail. Se email non esiste, aggiungere un tostify
 
--[x] Utils mail
--[x] Fixare tostify inutili in Formlogin.js
--[ ] Fixare Select (freccina e default) in FormRegister.js
+- [x] Utils mail
+- [x] Fixare tostify inutili in Formlogin.js
+- [ ] Fixare Select (freccina e default) in FormRegister.js
 
 
 ## File Controllati
