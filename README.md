@@ -23,14 +23,19 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Aggiungere oggetto a ls con utente attivo (mail)
 - [x] Aggiungi UIInputbox a forgotPsw (mail)
-- [ ] Modificare Welcome marco@marco (ridare Welcome Marco)
-- [ ] Fixare colore radio button in register
+- [x] Modificare Welcome marco@marco (ridare Welcome Marco)
+- [x] Fixare colore radio button in register
 
 - [x] Da login, inserisci mail, controlla nel ls, se non esiste aggiungi un tostify che avvisa che l'account non esiste, sennò controlla password; se sbagliata => tostify, oppure vai a welcome.
 - [x] Da register: inserisci tutti i dati, se la mail esiste => tostify ("Account già registrato"), sennò aggiorna il ls aggiungendo email e psw nuove.
 - [x] Da Welcome: clear quando si fa il log out dell'utente attivo
 
-- [ ] Da forgotPsw: controllo se esiste mail in ls, e modificare la psw associata a quella mail. Se email non esiste, aggiungere un tostify
+- [x] Da forgotPsw: controllo se esiste mail in ls, e modificare la psw associata a quella mail. Se email non esiste, aggiungere un tostify
+
+- [x] Utils mail
+- [x] Fixare tostify inutili in Formlogin.js
+- [x] Fixare Select (freccina e default) in FormRegister.js
+
 
 ## File Controllati
 
@@ -38,7 +43,19 @@ https://colorlib.com/etc/lf/Login_v9/index.html
 
 - [x] Welcome.js (ricordare di togliere il costruttore se non servirà)
 - [x] FormRegister.js
+- [x] FormLogin.js
+- [x] ForgotPsw.js
+- [x] UiButton.js
+- [x] UiInputbox.js
+- [x] UiCheckbox.js
+- [x] UiSelect.js
 
 ### CSS files
 
 - [x] register.css
+- [x] welcome.css
+- [x] login.css
+- [x] forgotpsw.css
+- [x] uiButton.css
+- [x] uiInputbox.css
+- [x] uiCheckbox.css

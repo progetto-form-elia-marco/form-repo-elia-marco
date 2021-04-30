@@ -1,175 +1,85 @@
-/* .facebook:hover {
-  width: 200px;
-  box-shadow: 0px 0px 30px 30px black;
-} */
-
 /* MOBILE */
-@media all and (max-width: 480px) {
-  h2 {
-    color: #4b2354;
-    line-height: 1.2;
-    font-size: 30px;
-  }
 
-  .loginContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: auto;
-    background-image: url("../../assets/images/sfondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 15px;
-  }
-
-  .formContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 50px 15px 30px 15px;
-    height: auto;
-    width: 85%;
-  }
-
-  .socialButtons {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 12px;
-    flex-direction: row;
-    width: 70%;
-  }
-
-  .formContainer p {
-    color: #999;
-    margin-top: 47px;
-    margin-bottom: 20px;
-  }
-
-  .linkContainer {
-    text-decoration: none;
-    margin-top: 80px;
-  }
-
-  .linkForgotpsw {
-    text-decoration: none;
-    margin-top: 10px;
-  }
-
-  .linkContainer:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
+h2 {
+  color: #4b2354;
+  line-height: 1.2;
+  font-size: 30px;
 }
 
-/* Tablet*/
-@media all and (min-width: 481px) and (max-width: 736px) {
-  h2 {
-    color: #4b2354;
-    line-height: 1.2;
-    font-size: 30px;
-  }
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: auto;
+  background-image: url("../../assets/images/sfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 15px;
+}
 
-  .loginContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: auto;
-    background-image: url("../../assets/images/sfondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 15px;
-  }
+.formContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 15px 30px 15px;
+  height: auto;
+  width: 85%;
+}
 
+.socialButtons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+  width: 70%;
+}
+
+.formContainer p {
+  color: #999;
+  margin-top: 47px;
+  margin-bottom: 20px;
+}
+
+.linkContainer {
+  text-decoration: none;
+  margin-top: 80px;
+}
+
+.linkForgotpsw {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.linkContainer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 736px) {
   .formContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
     padding: 50px 40px 30px 40px;
-    height: auto;
     width: auto;
   }
 
   .socialButtons {
-    display: flex;
     justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 70%;
-  }
-
-  .formContainer p {
-    color: #999;
-    margin-top: 47px;
-    margin-bottom: 20px;
-  }
-
-  .linkContainer {
-    text-decoration: none;
-    margin-top: 80px;
-  }
-
-  .linkForgotpsw {
-    text-decoration: none;
-    margin-top: 10px;
-  }
-
-  .linkContainer:hover {
-    text-decoration: underline;
-    cursor: pointer;
   }
 }
 
 /* DESKTOP */
-@media all and (min-width: 737px) and (max-width: 1689px) {
-  h2 {
-    color: #4b2354;
-    line-height: 1.2;
-    font-size: 30px;
-  }
-
-  .loginContainer {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: auto;
-    background-image: url("../../assets/images/sfondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 15px;
-  }
-
+@media (min-width: 737px) {
   .formContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
-    height: auto;
     width: auto;
     padding: 80px 55px 30px 55px;
   }
@@ -178,33 +88,7 @@
     margin-top: 0px;
   }
 
-  .formContainer p {
-    color: #999;
-    margin-top: 47px;
-    margin-bottom: 20px;
-  }
-
   .socialButtons {
-    display: flex;
     justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 70%;
-  }
-
-  .linkContainer {
-    text-decoration: none;
-    margin-top: 50px;
-  }
-
-  .linkForgotpsw {
-    text-decoration: none;
-    margin-top: 10px;
-  }
-
-  .linkContainer:hover {
-    text-decoration: underline;
-    cursor: pointer;
   }
 }

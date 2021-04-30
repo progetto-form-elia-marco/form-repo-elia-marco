@@ -9,6 +9,7 @@ import { Flip } from "react-toastify";
 import UiButton from "../../ui/funcComponents/UiButton";
 import UiInputbox from "../../ui/funcComponents/UiInputbox";
 import UiCheckbox from "../../ui/funcComponents/UiCheckbox";
+import UTILS from "../../../utils/mailUtil";
 
 import CookieConsent from "react-cookie-consent";
 
@@ -47,7 +48,9 @@ class FormLogin extends Component {
     let password = this.state.psw;
     let checkControl = this.state.check;
     // Regular expression per validare la mail
-    const control = /^[^A-Z0-9._%+-]+@[^A-Z0-9.-]+\.[^A-Z]{2,3}$/;
+    // const control = /^[^A-Z0-9._%+-]+@[^A-Z0-9.-]+\.[^A-Z]{2,3}$/;
+
+    const control = UTILS.emailValidation(email);
 
     const lsc = JSON.parse(localStorage.getItem("data"));
     const isInls = lsc.find((utente) => utente.email === email);
@@ -57,20 +60,26 @@ class FormLogin extends Component {
     //Valuto se c'è almeno un errore nei dati inseriti
     if (
       email === "" ||
-      !control.test(email) ||
+      !control ||
       password === "" ||
       !checkControl ||
       !isInls ||
       !validPsw
     ) {
       //Controllo i vari casi di errore e mostro Toast appropriato
-      (email === "") | !control.test(email) &&
-        this.showToast("Errore nell'inserimento della mail");
-      password === "" &&
-        this.showToast("Errore nell'inserimento della password");
-      !checkControl && this.showToast("Devi accettare i termini di servizio");
-      !isInls && this.showToast("User not found!");
-      !validPsw && this.showToast("Password not valid!");
+      if ((email === "") | !control) {
+        this.showToast("Mail not valid");
+      } else if (!isInls) {
+        this.showToast("User not found!");
+      }
+
+      if (password === "") {
+        this.showToast("Insert password");
+      } else if (!validPsw) {
+        this.showToast("Password not valid!");
+      }
+
+      !checkControl && this.showToast("Accept the terms of service");
     } else {
       //Altrimenti se non ci sono errori, salvo e cambio screen
       email = this.state.user;
@@ -139,7 +148,7 @@ class FormLogin extends Component {
           <UiInputbox
             type="text"
             placeholder={"username or email"}
-            maxLength={20}
+            maxLength={40}
             callback={this.callbackUsername}
             marginTop={"30px"}
             boxShadow={"0px 0px 30px rgba(0, 0, 0, 0.130)"}
@@ -157,7 +166,7 @@ class FormLogin extends Component {
           <UiCheckbox
             type="checkbox"
             name={"termini"}
-            label={"Accetto i termini di servizio"}
+            label={"I accepted the terms of service"}
             placeholder={"password"}
             maxLength={15}
             callback={this.callbackCheck}
@@ -180,7 +189,6 @@ class FormLogin extends Component {
 
           <div className="socialButtons">
             <UiButton
-              //backgroundColor="white"
               className="facebook"
               img={"facebook"}
               color="white"
@@ -201,7 +209,6 @@ class FormLogin extends Component {
               callback={this.callbackGoogle}
               width="50px"
               height="50px"
-              borderRadius="50px"
               display="flex"
               alignItems="center"
               justifyContent="center"
