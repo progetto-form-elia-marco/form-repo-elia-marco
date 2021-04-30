@@ -63,7 +63,7 @@ class FormRegister extends Component {
 
   callbackSignUp = (e) => {
     e.preventDefault();
-    if (this.state.psw === this.state.reapPsw && this.state.controlSelect) {
+     if (this.state.psw === this.state.reapPsw ) {
       const lsData = JSON.parse(localStorage.getItem("data"));
       console.log(lsData);
       const isInLs = lsData.find((utente) => utente.email === this.state.email);
@@ -86,17 +86,6 @@ class FormRegister extends Component {
     } else {
       if (this.state.psw !== this.state.reapPsw) {
         toast.error("Passwords are not equal!", {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-      }
-      if (!this.state.controlSelect) {
-        toast.error("Select a title!", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -211,6 +200,7 @@ class FormRegister extends Component {
           </div>
           <UiSelect
             className="selectTitle"
+            defaultValue='Front-end Developer'
             options={[
               "Front-end Developer",
               "Back-end Developer",

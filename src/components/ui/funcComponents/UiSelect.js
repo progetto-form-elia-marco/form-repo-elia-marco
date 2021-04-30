@@ -11,7 +11,7 @@ const UiSelect = (props) => {
       <select
         name={props.name}
         required
-        defaultValue={props.options[0]}
+        defaultValue={props.defaultValue}
         onChange={callbackSelect}
       >
         {props.options.map((option, index) => {
