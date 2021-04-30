@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 class Welcome extends Component {
   modifyWelcomeName = () => {
     const email = JSON.parse(localStorage.getItem("attivo")).email;
+    // eslint-disable-next-line
     const [name, emailAt] = email.split("@");
     return name;
   };

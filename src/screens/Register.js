@@ -5,11 +5,6 @@ import FormRegister from "../components/components_for_page/register/FormRegiste
 import "./css/register.css";
 
 class Register extends Component {
-  // 1. Inizializza variabili
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>

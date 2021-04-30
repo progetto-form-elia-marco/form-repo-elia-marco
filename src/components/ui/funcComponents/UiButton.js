@@ -14,7 +14,6 @@ const UiButton = (props) => {
       style={{
         width: props.width,
         height: props.height,
-        //backgroundColor: props.backgroundColor,
         borderRadius: props.borderRadius,
         fontSize: props.fontSize,
         cursor: "pointer",
@@ -31,12 +30,14 @@ const UiButton = (props) => {
 
       {
         //Controllo props.img per sapere quale icona mostrare
-        props.img === "facebook" && <img src={facebook} />
+        props.img === "facebook" && <img src={facebook} alt="facebook" />
       }
 
       {
         //Controllo props.img per sapere quale icona mostrare
-        props.img === "google" && <img src={google} style={{ width: "80%" }} />
+        props.img === "google" && (
+          <img src={google} alt="google" style={{ width: "80%" }} />
+        )
       }
     </button>
   );
